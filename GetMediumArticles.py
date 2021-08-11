@@ -13,16 +13,19 @@ day and stores them in my daily notes within my obsidian vault.
 class GetMediumArticles:
     def __init__(self):
         self.urls = {
-            "Towards Data Science": "https://towardsdatascience.com/archive/",
-            "UX Collective": "https://uxdesign.cc/archive/",
+            # "Towards Data Science": "https://towardsdatascience.com/archive/",
+            # "UX Collective": "https://uxdesign.cc/archive/",
             "The Startup": "https://medium.com/swlh/archive/",
             "Mission.org": "https://medium.com/the-mission/archive/",
             "Personal Growth": "https://medium.com/personal-growth/archive/",
             "UX Planet": "https://uxplanet.org/archive/",
-            "Better Programming": "https://betterprogramming.pub/",
-            "Netflix": "https://netflixtechblog.com/",
-            "Level Up Coding": "https://levelup.gitconnected.com/",
-            "Daily JS": "https://medium.com/dailyjs",
+            "Better Programming": "https://betterprogramming.pub/archive/",
+            "Netflix": "https://netflixtechblog.com/archive/",
+            "Level Up Coding": "https://levelup.gitconnected.com/archive/",
+            "Daily JS": "https://medium.com/dailyjs/archive/",
+            "Geek Culture": "https://medium.com/geekculture/archive/",
+            "Python In Plain Engligh": "https://python.plainenglish.io/archive/",
+            "Agile Insider": "https://medium.com/agileinsider/archive",
         }
 
         self.data = {}

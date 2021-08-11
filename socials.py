@@ -23,8 +23,10 @@ def display_social(company, profile_link, username=None):
     print("\n---\n")
 
 
-display_social("Linkedin", "https://www.linkedin.com/in/jack-parsonss/")
+display_social("🎨 Portfolio", "https://jackparsonss.github.io/")
 
-display_social("Github", "https://github.com/jackparsonss", "@jackparsonss")
+display_social("🗣 Linkedin", "https://www.linkedin.com/in/jack-parsonss/")
 
-display_social("Twitter", "https://twitter.com/jackparsonss", "@jackparsonss")
+display_social("😸 Github", "https://github.com/jackparsonss", "@jackparsonss")
+
+display_social("🕊 Twitter", "https://twitter.com/jackparsonss", "@jackparsonss")
