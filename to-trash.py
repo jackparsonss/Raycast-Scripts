@@ -24,7 +24,7 @@ it into my trash
 
 def main():
     source_path = "/Users/jackparsons/Downloads/"
-    destination_path = "/Users/jackparsons/.Trash"
+    destination_path = "/Users/jackparsons/.Trash/"
 
     files = os.listdir(source_path)
 
