@@ -13,8 +13,8 @@ day and stores them in my daily notes within my obsidian vault.
 class GetMediumArticles:
     def __init__(self):
         self.urls = {
-            # "Towards Data Science": "https://towardsdatascience.com/archive/",
-            # "UX Collective": "https://uxdesign.cc/archive/",
+            "Towards Data Science": "https://towardsdatascience.com/archive/",
+            "UX Collective": "https://uxdesign.cc/archive/",
             "The Startup": "https://medium.com/swlh/archive/",
             "Mission.org": "https://medium.com/the-mission/archive/",
             "Personal Growth": "https://medium.com/personal-growth/archive/",
@@ -22,10 +22,10 @@ class GetMediumArticles:
             "Better Programming": "https://betterprogramming.pub/archive/",
             "Netflix": "https://netflixtechblog.com/archive/",
             "Level Up Coding": "https://levelup.gitconnected.com/archive/",
-            "Daily JS": "https://medium.com/dailyjs/archive/",
             "Geek Culture": "https://medium.com/geekculture/archive/",
             "Python In Plain Engligh": "https://python.plainenglish.io/archive/",
-            "Agile Insider": "https://medium.com/agileinsider/archive",
+            "Agile Insider": "https://medium.com/agileinsider/archive/",
+            "Daily JS": "https://medium.com/dailyjs/archive/",
         }
 
         self.data = {}
@@ -34,16 +34,16 @@ class GetMediumArticles:
         yesterday = datetime.datetime.now() - datetime.timedelta(days=1)
         date = str(yesterday.strftime("%Y/%m/%d"))
 
-        url = url + date
+        url += date
 
-        print(f"Fetching Articles from {url}")
+        print(f"Checking {publication}...")
 
-        response = requests.get(url, allow_redirects=True)
+        response = requests.get(url, allow_redirects=False)
 
         try:
             response.raise_for_status()
         except Exception:
-            print(f"No Articles Found At {url}")
+            print(f"Invalid URL At {url}")
 
         page = response.content
         soup = BeautifulSoup(page, "lxml")
@@ -51,6 +51,9 @@ class GetMediumArticles:
             "div",
             class_="postArticle postArticle--short js-postArticle js-trackPostPresentation js-trackPostScrolls",
         )
+
+        if len(articles) > 0:
+            print(f"Fetching Articles from {url}")
 
         amount_of_articles = min(3, len(articles))
 
