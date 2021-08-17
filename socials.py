@@ -25,6 +25,8 @@ def display_social(company, profile_link, username=None):
 
 display_social("🎨 Portfolio", "https://jackparsonss.github.io/")
 
+display_social("✍️ Blog", "https://jackparsonss.hashnode.dev/")
+
 display_social("🗣 Linkedin", "https://www.linkedin.com/in/jack-parsonss/")
 
 display_social("😸 Github", "https://github.com/jackparsonss", "@jackparsonss")
