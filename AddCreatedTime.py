@@ -24,9 +24,9 @@ def add_created_time(path):
 
 
 def main():
-    path_done = "/Users/jackparsons/Library/Mobile Documents/iCloud~md~obsidian/Documents/🧠 Second Brain/✅ Done"
+    path_notes = "/Users/jackparsons/Library/Mobile Documents/iCloud~md~obsidian/Documents/🧠 Second Brain/📝 Notes"
     path_inbox = "/Users/jackparsons/Library/Mobile Documents/iCloud~md~obsidian/Documents/🧠 Second Brain/📥 Inbox"
-    add_created_time(path_done)
+    add_created_time(path_notes)
 
 
 if __name__ == "__main__":

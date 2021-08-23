@@ -86,7 +86,7 @@ class GetMediumArticles:
             out = ""
 
             for publication, articles in data.items():
-                out += f"## ***{publication}***\n"
+                out += f"### ***{publication}***\n"
                 for article in articles:
                     out += f"#### [{article['title']}]({article['article_url']})\n\n"
 

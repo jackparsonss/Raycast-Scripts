@@ -42,7 +42,8 @@ def open_obsidian_daily_note():
 def main():
     print("☀️ Good Morning Jack!!\n")
 
-    apps = ["Day One", "Todoist", "Spark", "Obsidian"]
+    # apps = ["Day One", "Todoist", "Spark", "Obsidian"]
+    apps = ["Todoist", "Spark", "Obsidian"]
 
     for app in apps:
         print(f"Opening {app}!")
