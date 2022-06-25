@@ -23,7 +23,7 @@ def display_social(company, profile_link, username=None):
     print("\n---\n")
 
 
-display_social("🎨 Portfolio", "https://jackparsonss.github.io/")
+display_social("🎨 Portfolio", "https://jackparsonss.me/")
 
 display_social("✍️ Blog", "https://jackparsonss.hashnode.dev/")
 

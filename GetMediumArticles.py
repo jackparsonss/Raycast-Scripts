@@ -14,18 +14,18 @@ class GetMediumArticles:
     def __init__(self):
         self.urls = {
             "Towards Data Science": "https://towardsdatascience.com/archive/",
-            "UX Collective": "https://uxdesign.cc/archive/",
+            # "UX Collective": "https://uxdesign.cc/archive/",
             "The Startup": "https://medium.com/swlh/archive/",
             "Mission.org": "https://medium.com/the-mission/archive/",
             "Personal Growth": "https://medium.com/personal-growth/archive/",
-            "UX Planet": "https://uxplanet.org/archive/",
+            # "UX Planet": "https://uxplanet.org/archive/",
             "Better Programming": "https://betterprogramming.pub/archive/",
-            "Netflix": "https://netflixtechblog.com/archive/",
+            # "Netflix": "https://netflixtechblog.com/archive/",
             "Level Up Coding": "https://levelup.gitconnected.com/archive/",
             "Geek Culture": "https://medium.com/geekculture/archive/",
-            "Python In Plain Engligh": "https://python.plainenglish.io/archive/",
-            "Agile Insider": "https://medium.com/agileinsider/archive/",
-            "Daily JS": "https://medium.com/dailyjs/archive/",
+            "Python In Plain English": "https://python.plainenglish.io/archive/",
+            # "Agile Insider": "https://medium.com/agileinsider/archive/",
+            # "Daily JS": "https://medium.com/dailyjs/archive/",
         }
 
         self.data = {}
@@ -38,7 +38,7 @@ class GetMediumArticles:
 
         print(f"Checking {publication}...")
 
-        response = requests.get(url, allow_redirects=False)
+        response = requests.get(url, allow_redirects=True)
 
         try:
             response.raise_for_status()
