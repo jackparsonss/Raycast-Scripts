@@ -24,7 +24,7 @@ it into my resources folder in my obsidian vault
 
 def main():
     source_path = "/Users/jackparsons/Downloads/"
-    destination_path = "/Users/jackparsons/Library/Mobile Documents/iCloud~md~obsidian/Documents/🧠 Second Brain/🌠 Resources/"
+    destination_path = "/Users/jackparsons/Library/Mobile Documents/iCloud~md~obsidian/Documents/🧠 Second Brain/🌠Resources/"
 
     files = os.listdir(source_path)
 
