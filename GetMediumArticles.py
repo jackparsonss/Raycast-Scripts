@@ -80,7 +80,7 @@ class GetMediumArticles:
         obsidian_date = str(datetime.datetime.now().strftime("%Y-%m-%d"))
 
         with open(
-            f"/Users/jackparsons/Library/Mobile Documents/iCloud~md~obsidian/Documents/🧠 Second Brain/📓 Daily Notes/{obsidian_date}.md",
+            f"/Users/jackparsons/Library/Mobile Documents/iCloud~md~obsidian/Documents/🧠 Second Brain/Daily Notes/{obsidian_date}.md",
             "a",
         ) as file:
             out = ""

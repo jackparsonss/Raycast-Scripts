@@ -17,7 +17,7 @@
 
 import sys
 
-path = "/Users/jackparsons/Library/Mobile Documents/iCloud~md~obsidian/Documents/🧠 Second Brain/🛠 Tools/Quick Notes.md"
+path = "/Users/jackparsons/Library/Mobile Documents/iCloud~md~obsidian/Documents/🧠 Second Brain/Tools/Quick Notes.md"
 with open(path, "a") as note:
     notes = sys.argv[1]
 
