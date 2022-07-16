@@ -14,7 +14,8 @@
 # @raycast.author Jack Parsons
 # @raycast.authorURL https://github.com/jackparsonss
 
-import subprocess, pyautogui, time, webbrowser, GetMediumArticles
+import subprocess, pyautogui, time, GetMediumArticles
+# import subprocess, pyautogui, time, webbrowser, GetMediumArticles
 
 """
 This script is intended for me to run first thing in the morning to automate all 
@@ -44,7 +45,7 @@ def main():
 
     # apps = ["Day One", "Todoist", "Spark", "Obsidian"]
     # apps = ["Todoist", "Spark", "Obsidian"]
-    apps = ["TickTick", "Spark", "Obsidian"]
+    apps = ["Spark", "Obsidian", "Calendar"]
 
     for app in apps:
         print(f"Opening {app}!")
@@ -56,7 +57,7 @@ def main():
             # allow app to open
             time.sleep(2)
 
-    webbrowser.open("https://calendar.google.com/calendar/u/1")
+    # webbrowser.open("https://calendar.google.com/calendar/u/1")
 
     print("\n⚡️All Done, Have a Productive Morning⚡️")
 
